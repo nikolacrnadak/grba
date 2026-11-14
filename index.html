@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 146, 201);
+        }
+        h1 {
+            text-align: center;
+            font-size: 80px;
+            margin-top:20px;
+        }
+        .dugmad {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            width: 300px;
+            height: 150px;
+            font-weight: bold;
+            font-size: 70px;
+            align-items: center;
+            margin-top: 100px;
+            cursor: pointer;
+        }
+        .da {
+            margin-right: 20px;
+        }
+        .img {
+    width: 100%;
+    text-align: center;
+}
+
+.slika {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+        p {
+            text-align: center;
+            font-size: 30px;
+            color: rgb(232, 7, 7);
+        }
+        .img, .no {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>GRBA WILL YOU MARRY ME?</h1>
+    <div class="dugmad">
+        <button class="da">DA</button>
+        <button class="ne">NE</button>
+    </div>
+    <div class="no">
+        <p>Probaj opet.</p>
+    </div>
+    <div class="img">
+        <p>Ti amo Grba !!!!!</p>
+        <img src="https://i.ibb.co/bjJdzpnc/love-you-loving-cat.jpg" alt="i-love-you-grba" border="0" class="slika"/>
+    </div>
+    <script>
+        document.querySelector(".da").addEventListener("click", function() {
+            document.querySelector(".img").style.display = "block";
+            document.querySelector(".no").style.display = "none";
+        });
+
+        document.querySelector(".ne").addEventListener("click", function() {
+            document.querySelector(".img").style.display = "none";
+            document.querySelector(".no").style.display = "block";
+        });
+    </script>
+</body>
+</html>
